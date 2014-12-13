@@ -2,7 +2,7 @@
 <html>
  <head>
   <title>[% template.title or site.title %]</title>
-  <link rel="shortcut icon" href="[% c.uri_for('/') %]favicon.png?v=5" />
+  <link rel="shortcut icon" href="[% c.uri_for('/') %]favicon.ico?v=7" />
   <script src="[% c.uri_for('/static') %]/jquery/jquery.min.js"></script>
   <script src="[% c.uri_for('/static') %]/lib/underscore-min.js"></script>
   <link rel="stylesheet" type="text/css" href="[% c.uri_for('/static') %]/bootstrap/css/bootstrap.min.css">

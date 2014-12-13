@@ -23,6 +23,7 @@ Catalyst Controller.
 
 sub index :Path {
     my ( $self, $c ) = @_;
+    $c->forward('View::HTML');
 }
 
 
