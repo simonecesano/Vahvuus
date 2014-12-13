@@ -8,5 +8,25 @@
       </button>
       <a class="navbar-brand" href="#">Vahvuus</a>
     </div>
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Actions<span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="themes">
+            <li><a href="[% c.uri_for('/home') %]">Create a folder</a></li>
+	    <li><a href="[% c.uri_for('/home') %]">Upload a file</a></li>
+	    <li role="presentation" class="divider"></li>
+            <li><a href="[% c.uri_for('/search') %]">Search for content</a></li>
+	  </ul>
+	</li>
+	<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Help<span class="caret"></span></a>
+	  <ul class="dropdown-menu" aria-labelledby="themes">
+            <li><a href="[% c.uri_for('/help') %]">User manual</a></li>
+            <li><a href="[% c.uri_for('/help/tools') %]">Tools</a></li>
+	  </ul>
+	</li>
+      </ul>
+    </div>
   </div>
 </div>
