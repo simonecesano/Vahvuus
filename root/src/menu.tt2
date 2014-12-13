@@ -13,10 +13,12 @@
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Actions<span class="caret"></span></a>
           <ul class="dropdown-menu" aria-labelledby="themes">
-            <li><a href="[% c.uri_for('/home') %]">Create a folder</a></li>
-	    <li><a href="[% c.uri_for('/home') %]">Upload a file</a></li>
+	    <li><a href="[% c.uri_for('/p') %]">Go to the root folder</a></li>
 	    <li role="presentation" class="divider"></li>
-            <li><a href="[% c.uri_for('/search') %]">Search for content</a></li>
+            <li><a href="#">Create a folder here</a></li>
+	    <li><a href="#">Upload a file here</a></li>
+	    <li role="presentation" class="divider"></li>
+            <li><a href="#">Search for content</a></li>
 	  </ul>
 	</li>
 	<li class="dropdown">
