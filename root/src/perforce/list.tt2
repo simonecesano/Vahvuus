@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>[% c.stash.folder %]</h1>
+    </div>
+    <div class="col-md-12">
+      <h5>//[% c.stash.path.join('/') %]</h5>
+      <hr>
+      [% IF c.stash.dirs.size %]
+      <h4>subfolders</h4>
+      [% FOR d = c.stash.dirs %]
+      <a href="[% c.uri_for("/p") %]/[% d.replace("\/\/", "") %]">[% d.replace(c.stash.regex, "") %]</a><br />
+      [% END %]
+      <hr>
+      [% END %]
+      [% IF c.stash.files.size %]
+      <h4>files</h4>
+      [% FOR f = c.stash.files %]
+      [% f.depotFile.replace(c.stash.regex, "") %]<br />
+      [% END %]
+      [% END %]
+    </div>
+  </div>
+</div>

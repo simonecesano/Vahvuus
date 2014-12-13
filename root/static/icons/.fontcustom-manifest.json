@@ -1,0 +1,70 @@
+{
+  "checksum": {
+    "previous": "25b899b7f74f51abb2cc5e402e7af556fd2d85e32a004ea34224a08725206da8",
+    "current": "25b899b7f74f51abb2cc5e402e7af556fd2d85e32a004ea34224a08725206da8"
+  },
+  "fonts": [
+    "fontcustom/fontcustom_25b899b7f74f51abb2cc5e402e7af556.ttf",
+    "fontcustom/fontcustom_25b899b7f74f51abb2cc5e402e7af556.svg",
+    "fontcustom/fontcustom_25b899b7f74f51abb2cc5e402e7af556.woff",
+    "fontcustom/fontcustom_25b899b7f74f51abb2cc5e402e7af556.eot"
+  ],
+  "glyphs": {
+    "noun_1141_cc": {
+      "codepoint": 61696,
+      "source": "./noun_1141_cc.svg"
+    },
+    "noun_15247_cc": {
+      "codepoint": 61697,
+      "source": "./noun_15247_cc.svg"
+    },
+    "noun_24654_cc": {
+      "codepoint": 61698,
+      "source": "./noun_24654_cc.svg"
+    },
+    "noun_26766_cc": {
+      "codepoint": 61699,
+      "source": "./noun_26766_cc.svg"
+    },
+    "noun_58066": {
+      "codepoint": 61700,
+      "source": "./noun_58066.svg"
+    },
+    "noun_705_cc": {
+      "codepoint": 61701,
+      "source": "./noun_705_cc.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "fontcustom",
+    "force": false,
+    "input": {
+      "templates": ".",
+      "vectors": "."
+    },
+    "no_hash": false,
+    "output": {
+      "css": "fontcustom",
+      "fonts": "fontcustom",
+      "preview": "fontcustom"
+    },
+    "preprocessor_path": null,
+    "quiet": false,
+    "templates": [
+      "css",
+      "preview"
+    ]
+  },
+  "templates": [
+    "fontcustom/fontcustom.css",
+    "fontcustom/fontcustom-preview.html"
+  ]
+}

@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Hi, [% c.user.name %]</h1>
+      This is your home page
+    </div>
+    <div class="col-md-6">
+      <h3>Your maps</h3>
+      [% u = c.log.info("user id: " _ c.stash.uid) %]
+      [% IF c.model('Maps::Map').search({ 'user_id' => c.stash.uid }) %]
+      [% FOR m = c.model('Maps::Map').search({ 'user_id' => c.stash.uid }) %]
+      <a href="[% c.uri_for('/maps', c.stash.uid, m.name) %]">[% m.name %]</a><br />
+      [% END %]<hr />
+      <a href="[% c.uri_for('/maps/new') %]">Create a new map</a><br />
+      <a href="[% c.uri_for('/import/google') %]">Import from Google maps</a><br />
+      <a href="[% c.uri_for('/import/kml') %]">Load your own KML file</a><br />		
+      [% ELSE %]
+      You don't have any maps yet - want to <a href="[% c.uri_for('/maps/new') %]">start one</a> or
+      <a href="[% c.uri_for('/import/google') %]">import one from Google maps</a> or 
+      <a href="[% c.uri_for('/import/kml') %]">load your own KML file</a><br />	
+
+      [% END %]
+    </div>
+    <div class="col-md-6">
+      <h3>Your books</h3>
+    </div>
+  </div>
+</div>

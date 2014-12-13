@@ -1,0 +1,13 @@
+<link href="/static/icons/fonts/fontcustom/fontcustom.css" rel="stylesheet">
+tee<i class="icon-tee"></i>
+grapes<i class="icon-grapes"></i>
+bread<i class="icon-bread"></i>
+shop<i class="icon-shop"></i>
+record<i class="icon-record"></i>
+
+------------------------
+
+record <i class="icon-record"></i>
+pizza <i class="icon-pizza"></i>
+book <i class="icon-book"></i>
+

@@ -1,0 +1,73 @@
+/*
+  Icon Font: fontcustom
+*/
+
+@font-face {
+  font-family: "fontcustom";
+  src: url("./fontcustom_afef526cee980d7a19d3d10293e1f0ab.eot");
+  src: url("./fontcustom_afef526cee980d7a19d3d10293e1f0ab.eot?#iefix") format("embedded-opentype"),
+       url("./fontcustom_afef526cee980d7a19d3d10293e1f0ab.woff") format("woff"),
+       url("./fontcustom_afef526cee980d7a19d3d10293e1f0ab.ttf") format("truetype"),
+       url("./fontcustom_afef526cee980d7a19d3d10293e1f0ab.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "fontcustom";
+    src: url("./fontcustom_afef526cee980d7a19d3d10293e1f0ab.svg#fontcustom") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-book:before,
+.icon-bread:before,
+.icon-grapes:before,
+.icon-noun_12799:before,
+.icon-noun_1300_cc:before,
+.icon-noun_13641:before,
+.icon-noun_152_cc:before,
+.icon-noun_38074_cc:before,
+.icon-noun_41150_cc:before,
+.icon-noun_4209:before,
+.icon-noun_4309:before,
+.icon-noun_4417:before,
+.icon-noun_50747_cc:before,
+.icon-pizza:before,
+.icon-record:before,
+.icon-shop:before,
+.icon-tee:before {
+  display: inline-block;
+  font-family: "fontcustom";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon-book:before { content: "\f106"; }
+.icon-bread:before { content: "\f104"; }
+.icon-grapes:before { content: "\f101"; }
+.icon-noun_12799:before { content: "\f10a"; }
+.icon-noun_1300_cc:before { content: "\f107"; }
+.icon-noun_13641:before { content: "\f10b"; }
+.icon-noun_152_cc:before { content: "\f108"; }
+.icon-noun_38074_cc:before { content: "\f10c"; }
+.icon-noun_41150_cc:before { content: "\f10d"; }
+.icon-noun_4209:before { content: "\f10e"; }
+.icon-noun_4309:before { content: "\f10f"; }
+.icon-noun_4417:before { content: "\f110"; }
+.icon-noun_50747_cc:before { content: "\f111"; }
+.icon-pizza:before { content: "\f109"; }
+.icon-record:before { content: "\f105"; }
+.icon-shop:before { content: "\f103"; }
+.icon-tee:before { content: "\f102"; }

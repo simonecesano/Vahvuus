@@ -1,0 +1,68 @@
+general
+--------
+
+- fix current map (done)
+- refactor poi controller (done)
+
+Main Map
+--------
+
+- add location type icons to list (done)
+- change location icon by type
+- change color for locations that do not have descriptions (done)
+- adjust size to include all points (done)
+
+POI
+---
+
+- fix buttons style (done)
+- show/hide other things close by
+- add take shot to map
+- add website link
+- add phone number
+- delete poi (done)
+- rename poi
+- move to another map
+
+location
+--------
+
+- add dropdown to pick map (done)
+
+api
+---
+
+- access maps (done)
+- access pois list (done)
+- access poi (done)
+- check user access
+
+Book
+----
+
+- create
+- add poi
+- sort pois
+- create section break(s) (h1, h2, h3, h4) 
+- add specific section
+- markdown editing
+
+Printing
+--------
+
+- styling
+- test without tables
+- add picture
+- download as tar.gz
+
+Tools
+------
+
+- add from google maps (done)
+- add from address
+- pop-up for choosing map to add to
+
+infrastructure
+--------------
+
+- migrate static files to plack

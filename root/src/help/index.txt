@@ -1,0 +1,26 @@
+Using Vahvuus
+=============
+
+Creating maps
+-------------
+
+You can create a map from scratch by clicking on "create a new map" on your home page. You will need to type the name of the maps, and a location to center it on.
+After that, you can add points of interest by clicking on the point, and following the easy instructions. 
+
+[Create a new map](/maps/new)
+
+
+Importing maps
+----------------
+
+### Google Maps - new style
+
+By clicking "Import from Google maps" you will go to the Google maps import screen. There you just need to paste the URL of your map (new style only) and the name you want the new map to have. After that you'll be redirected to the page for your new map.
+
+[Import Google maps](/import/google)
+
+### KML - old Google maps
+
+By clicking "Load your own KML file" you will go to the KML import. There you just need to paste the URL of your KML map file and the name you want the new map to have. On old style Google maps you can find the KML link just above the list of places. Use "Copy Link Location" to copy the link. Alternatively, you just take a file you already have created or downloaded and drop it on the grey area. After that you'll be redirected to the page for your new map
+
+[Import KML file](/import/kml)

@@ -1,0 +1,13 @@
+[% USE Markdown -%]
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      [% file = c.namespace _ '/' _ (c.req.args.size ? c.req.args.join('/') : 'index') _ '.txt' %]<br />
+      [% FILTER markdown %]
+      [% INSERT $file %]
+      [% END %]
+      <hr />
+      <i style="font-size:6pt">[% file %]</i><br />
+    </div>
+  </div>
+</div>

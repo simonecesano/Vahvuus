@@ -1,0 +1,10 @@
+<link href="[% c.uri_for('/static') %]/fontawesome/css/font-awesome-oxiana.css" rel="stylesheet">
+<script src="[% c.uri_for('/static') %]/leaflet/leaflet.js"></script>
+<link rel="stylesheet" type="text/css" href="[% c.uri_for('/static') %]/leaflet/leaflet.css">
+
+<script src="[% c.uri_for('/static') %]/leaflet/easy-button.js"></script>
+<script src="[% c.uri_for('/static') %]/leaflet/leaflet-image.js"></script>
+
+<script src='[% c.uri_for('/static') %]/leaflet/leaflet-hash.js'></script>
+<link rel="stylesheet" href="[% c.uri_for('/static') %]/leaflet/leaflet.awesome-markers.css">
+<script src="[% c.uri_for('/static') %]/leaflet/leaflet.awesome-markers.js"></script>
