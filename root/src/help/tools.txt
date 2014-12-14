@@ -1,18 +1,50 @@
 Tools
 =====
 
-Bookmarklet
------------
+Introduction
+------------
 
-Our bookmarklet allows you to quickly add a point of interest to your current map from Google maps. 
+We've built tools to make the workflow with Desi easy for you.
 
-It's simple:
+Some of them are services, which appear on the application menu (the one just
+right of the apple menu in the top left corner) like in the picture
+below. You can just select the appropriate service from the menu, and the
+application will take care of things.
 
-- drag and drop the
-<a href='javascript:(function(){var%20w=window.open("");%20w.location.href="http://oxiana.herokuapp.com/poi/add?url="+unescape(encodeURIComponent(window.location.href))})()'>Add to Vahvuus</a> bookmarklet to your toolbar 
-- search for a place on Google maps
-- make sure that you choose only one of the results
-- click on the bookmarklet on your toolbar
-- done!
+Others are applications. You will need to install them: once installed they
+will let you perform the most frequent tasks with one click. You can find out
+how to easily install these applications below.
 
+What we've built
+----------------
+
+Or current roster of applications and services includes:
+
+- __login to desi__: a service enabling a two-click login to desi (we really could
+  not get rid of one click)
+- __sync project__: this lets you sync (download, in other words) a
+  folder from desi so you can start working anc collaborating. This exists as
+  a service in Finder, and as an application
+- __check-in file__: this lets you check in (that means making your file's latest version
+  available back on the server) the file you're working on directly
+  from the application. Currently we support Adobe Illustrator, Powerpoint
+  and Joota. These plus all other files can also be checked in via the finder
+  (choose "check-in" after right-clicking on a file) or via our convenient droplet.
+
+For more complicated workflows, the Desi client offers a convenient way to
+execute anything you can possibly want to do (sync, check-in, searching and more). 
+
+Terminal? Oh my dear
+--------------------
+
+Some of the tools and workflows will require using the terminal
+application. Scary as it may sound, we've kept it easy: you won't have to do
+anything more than opening the application (type "terminal" in the Spotlight
+search bar and fire away), and pasting in there a line you've copied from
+your browser.
+
+In fact that's pretty much all you'll have to do in the terminal. Doing
+things this way lets us do really complex things without gigantic
+efforts. The added value for you is that you'll look as cool as Trinity in
+the Matrix doing it.
 

@@ -1,12 +1,90 @@
 Using Vahvuus
 =============
 
+Vahvuus makes it easy to navigate the new Design servers and to make the
+best use their fantastic capabilities, like sharing, versioning,
+searching and much more.
+
+You probably will want to check out our quick introduction to the key concepts on the
+new servers [here]([% c.uri_for('/help/versioning') %]). The workflow
+is not complicated at all once you get the hang of it, but there are a few
+things to keep in mind when switching from a "dumb" filesystem, so
+take 2 minutes and check it out. It won't take more, and you'll soon
+be a ninja.
+
+If ninja is not enough for you, there's also a "more than you probably want to know" explanation
+[here]([% c.uri_for('/help/technical') %]). After reading that you'll
+probably explaining things to us, and not the other way round.
+
+Oh, and just in case you wanted to know Vahvuus comes from the Finnish work for
+"strength". We got it from Google translate, not from a branding agency.
+
 Navigating
 -------------
 
+If you can use the Finder, or Windows Explorer you probably can use
+the navigation in Vahvuus. Click on any of the sub-folders listed
+under the "Subfolders" heading to navigate to the folder.
+
+You can also clock on any one of the folders on the folder path listing under the
+title to jump to  any spot on the path.
+
+If you get badly lost, you can click on the "Actions" menu, and choose
+the first item - "Go to the root folder". That will take you back to
+the root of the folder tree.
+
+You can do the same also by clicking on the little folder icon at the
+left of the folder path listing.
+
+<b>The following feature is not implemented yet. This is how it will work when it
+does.</b>
+
+You can open any of the files in the files listing by clicking on
+it. In some cases (images, PDF or AI files) you will be able to see
+the content directly in the browser.
+
+This only works with files that are smaller than 7Mb. If you want
+to see bigger files, you need to sync them to your computer: this
+is because downloading big files this way really slows things
+down. Syncing, instead, is lightning fast. 
 
 Creating folders
 ----------------
 
+<b>This feature is not implemented yet. This is how it will work when it
+does.</b>
+
+If you want to create a sub-folder in the folder you are in, choose
+"Create a folder here" in the "Actions" menu. A popup will show, and
+ask you for the folder name. You obviously cannot choose a name of an
+existing folder, and there are a few characters you cannot use.
+
+Other than that, click OK, and you will be taken to the folder you
+just created.
+
 Uploading files
 ---------------
+
+<b>This feature is not implemented yet. This is how it will work when it
+does.</b>
+
+You can upload a file directly into the folder you are in. To do that,
+choose "Upload a file here" in the "Actions" menu. A popup will show,
+and you can drag and drop your file onto the grey area, or choose a file to
+upload by clocking "Browse". Once you're done choosing the file, click
+OK to upload, and wait until it's done. The page will refresh, and
+your file will be there. In case things do not work out, you'll get an
+error message telling you what happened.
+
+If you're trying to upload a file which has the same name of an
+existing one, this will be saved as a new version of the old one,
+which will be kept. However, you may not be allowed to do so: it could be that
+someone is working on the file, or it is locked. You can tell that's
+the case because the file name field is highlighted, and an error
+message below tells you what's going on, and (in case) who's locking
+the file, so you can call or e-mail them about it.
+
+There's a limit to the file size you can upload - it's 20Mb. things
+get so slow beyond that size that it's not the best idea. Syncing the
+folder, adding the file there and checking it in is going to be
+faster, and lets you keep things aligned really easily.      
