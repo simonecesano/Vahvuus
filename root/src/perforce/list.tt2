@@ -25,7 +25,10 @@
       <hr>
       <div class="multicol">
       [% FOR f = c.stash.files %]
-      [% f.depotFile.replace(c.stash.regex, "") %]<br />
+      <a href="[% c.uri_for('/f') 
+	       %]/[% 
+	       f.depotFile.replace('\/\/', '') 
+	       %]">[% f.depotFile.replace(c.stash.regex, "") %]</a><br />
       [% END %]
       </div>
       <hr>
@@ -43,3 +46,6 @@
     [% END %]
   </div>
 </div>
+[% IF c.stash.p4path %]
+[% INCLUDE "perforce/sync_modal.tt2" %]
+[% END %]
