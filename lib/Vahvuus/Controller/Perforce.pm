@@ -7,18 +7,8 @@ BEGIN { extends 'Catalyst::Controller'; }
 __PACKAGE__->config(namespace => 'p');
 
 use List::MoreUtils qw/indexes/;
+use Vahvuus::Util qw/break/;
 use Data::Dump qw/dump/;
-
-
-sub break(&@) {
-    my $sub = shift;
-    my @out = (); my $cum = [];
-    for (@_) {
-	if ($sub->()) { push @out, $cum; $cum = [] } else { push @$cum, $_ }
-    }
-    return @out;
-}
-
 
 sub index :Path :Args(0) {
     my ( $self, $c ) = @_;
@@ -60,6 +50,7 @@ sub list :Path  {
 
     $c->stash->{page} = $page;
     $c->stash->{path} = \@path;
+    $c->stash->{p4path} = join '/', '/', @path, '...';
     $c->stash->{folder} = $path[-1];
     $c->stash->{files} = \@files;
     $c->stash->{dirs} = \@dirs;
