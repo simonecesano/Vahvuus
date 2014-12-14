@@ -15,10 +15,11 @@
           <ul class="dropdown-menu" aria-labelledby="themes">
 	    <li><a href="[% c.uri_for('/p') %]">Go to the root folder</a></li>
 	    <li role="presentation" class="divider"></li>
-            <li><a href="#">Create a folder here</a></li>
-	    <li><a href="#">Upload a file here</a></li>
+	    <li><a id="menu_sync_folder" href="#">Sync this folder</a></li>	
+            <li><a href="[% c.uri_for('/unimplemented') %]">Create a folder here</a></li>
+	    <li><a href="[% c.uri_for('/unimplemented') %]">Upload a file here</a></li>
 	    <li role="presentation" class="divider"></li>
-            <li><a href="#">Search for content</a></li>
+            <li><a href="[% c.uri_for('/unimplemented') %]">Search for content</a></li>
 	  </ul>
 	</li>
 	<li class="dropdown">
