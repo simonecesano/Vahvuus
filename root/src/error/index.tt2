@@ -2,10 +2,10 @@
     <div class="jumbotron">
       <div class="container">
 	<div class="col-md-9">
-	  <img class="img-responsive" style="width=60%" src="[% c.uri_for('/static/') %]pics/beagle_ashore.png">
+	  <img class="img-responsive" style="width=60%" src="[% c.uri_for('/static/') %]pics/[% c.stash.pic || 'construction.jpg' %]">
 	</div>
 	<div class="col-md-3">
-	  <h1>There was an error!</h1>
+	  <h1>[% c.stash.msg || 'There was an error!' %]</h1>
 	</div>
       </div>
     </div>
