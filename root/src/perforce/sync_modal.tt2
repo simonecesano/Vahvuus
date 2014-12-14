@@ -1,0 +1,51 @@
+<script>
+    $(function(){
+	$('#sync_cancel').click(function(){ $('#sync_folder_modal').modal('toggle') });
+	$('#menu_sync_folder').click(function(){
+	    $.get( "[% c.uri_for('/w/size') %]",
+		   { path: "[% c.stash.p4path %]" },
+		   function( data ) {
+		       if (data.count >= 500) {
+			   data.count = "possibly more than " + data.count;
+			   data.size = data.size + " and maybe more";
+		       }
+		       $('#file_count').html(data.count)
+		       $('#file_size').html(data.size)
+		   });
+	    $('#sync_folder_modal').modal('toggle')
+	});
+    })
+</script>
+<div id="sync_folder_modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Sync file</h4>
+      </div>
+      <div class="modal-body">
+	This folder contains <span id="file_count">XXX</span> files, and has a size of <span id="file_size">YYY</span>. 
+	You can sync it to your computer one of the ways below.<p />
+	<ul>
+	  <li>By copying the command below and pasting it in a terminal window:<br />
+	    <input type="text" name="new_name" class="form-control" id="new_name" value='p4 sync "[% c.stash.p4path %]"'><p />
+	  </li>
+	  <li>
+	    Or you can copy the folder path here, and run the "Sync project" command in Finder, or the Sync app on your
+	    desktop, if you have installed them (see <a href="[% c.uri_for('/help/tools') %]">here</a> for how)
+	    <input type="text" name="new_name" class="form-control" id="new_name" value="[% c.stash.p4path %]"><p />
+	  </li>
+	  <li>
+	    Finally you can use the Desi client by klicking on this link: <a href="p4:[% c.stash.p4path %]">sync project</a>
+	  </li>
+	</ul>
+	<hr>
+	There's help <a href="[% c.uri_for('/help/syncing') %]">here</a> if you need it
+      </div>
+      <div class="modal-footer">
+	<!-- <a class="btn btn-primary" id="sync_ok">Ok</a> -->
+	<a class="btn btn-primary" id="sync_cancel">close</a>
+      </div>
+    </div>
+  </div>
+</div>
