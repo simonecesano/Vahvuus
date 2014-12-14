@@ -35,11 +35,14 @@ our $VERSION = '0.01';
 # with an external configuration file acting as an override for
 # local deployment.
 
-__PACKAGE__->config(
-    name => 'Vahvuus',
-    # Disable deprecated behavior needed by old applications
-    disable_component_resolution_regex_fallback => 1,
-    enable_catalyst_header => 1, # Send X-Catalyst header
+__PACKAGE__->config
+    (
+     name => 'Vahvuus',
+     # Disable deprecated behavior needed by old applications
+     disable_component_resolution_regex_fallback => 1,
+     enable_catalyst_header => 1, # Send X-Catalyst header
+     encoding => 'UTF-8',
+     'default_view' => 'HTML',
 );
 
 # Start the application
